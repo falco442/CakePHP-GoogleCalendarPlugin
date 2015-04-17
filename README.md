@@ -30,5 +30,17 @@ and this will load the component located in the plugin.
 If you want to create an event on Google Calendar, all you have to do is to use the function `insertEvent()`, passing two arguments: the array of the data of the event, and the Google id (Google mail) of the user for which create the event:
 
 ```
-insertEvent($googleAccountID, $event)
+insertEvent($googleAccountID, $event);
+```
+
+where the event has to be an array of the form
+
+```
+$event = array(
+    'start'=>'2014-12-31 22:00:00',
+    'end'=>'2015-01-01 03:30:00',
+    'summary'=>'New Years Eve Dinner',
+    'description'=>'We will have a great party!!'
+    'location'=>'Via Nazionale 6 Roma'
+);
 ```
