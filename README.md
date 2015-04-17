@@ -14,7 +14,7 @@ Download the .zip file and extract it in your app/Plugin folder, renaming the ma
 
 Load GoogleCalendar in your Components in the `AppController.php`:
 
-```
+```php
 public $components = array(
     ...,
     'GoogleCalendar.GoogleCalendar'
