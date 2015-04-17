@@ -44,3 +44,14 @@ $event = array(
     'location'=>'Via Nazionale 6 Roma'
 );
 ```
+
+### Get the User's calendar list
+
+To get a user's calendar list, simply use the function `getCalendarList()`, that accepts a unique parameter: the Google Account ID of the user of which we want to retrieve the calendar list:
+
+```php
+getCalendarList($googleAccountID);
+
+```
+
+the function returns an array which contains the calendar list for the `$googleAccountID`
