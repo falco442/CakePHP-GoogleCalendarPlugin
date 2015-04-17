@@ -54,4 +54,26 @@ getCalendarList($googleAccountID);
 
 ```
 
-the function returns an array which contains the calendar list for the `$googleAccountID`
+the function returns an array which contains the calendar list for the `$googleAccountID`.
+
+## Extra
+
+### Map Event fields
+
+If you don't want to map everytime the fields of the event (maybe because your events' table fields are not named as the Google Calendar events' fields are), you can pass the mapping parameters in `AppController.php`:
+
+```php
+public $components = array(
+    ...,
+    'GoogleCalendar.GoogleCalendar'=>array(
+	   'id'=>'214253494718-bcb5cdc3ov8i34mfm5pb9fbmfej876bp.apps.googleusercontent.com',
+    	'secret'=>'l182SpNtvG9MnppvUDRdkxOP',
+    	'eventMap'=>array(
+    		'summary'=>'name',
+    		'location'=>'address',
+    		'start'=>'date',
+    		'end'=>'end_date'
+    	)
+    )
+);
+```
