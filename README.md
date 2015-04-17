@@ -72,10 +72,11 @@ public $components = array(
 	   'id'=>'your-Google-App-id',
     	'secret'=>'your-Google-App-secret',
     	'eventMap'=>array(
-    		'summary'=>'name',
-    		'location'=>'address',
-    		'start'=>'date',
-    		'end'=>'end_date'
+    		'summary'=>'event_title',
+    		'description'=>'event_description'
+    		'location'=>'event_address',
+    		'start'=>'start_datetime',
+    		'end'=>'end_datetime'
     	)
     )
 );
