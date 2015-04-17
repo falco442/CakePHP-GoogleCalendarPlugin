@@ -17,7 +17,10 @@ Load GoogleCalendar in your Components in the `AppController.php`:
 ```php
 public $components = array(
     ...,
-    'GoogleCalendar.GoogleCalendar'
+    'GoogleCalendar.GoogleCalendar'=>array(
+	   'id'=>'your-Google-App-id',
+    	'secret'=>'your-Google-App-secret'        
+    )
 );
 ```
 
@@ -66,8 +69,8 @@ If you don't want to map everytime the fields of the event (maybe because your e
 public $components = array(
     ...,
     'GoogleCalendar.GoogleCalendar'=>array(
-	   'id'=>'your Google App id',
-    	'secret'=>'your Google App secret',
+	   'id'=>'your-Google-App-id',
+    	'secret'=>'your-Google-App-secret',
     	'eventMap'=>array(
     		'summary'=>'name',
     		'location'=>'address',
