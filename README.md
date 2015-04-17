@@ -40,7 +40,7 @@ $event = array(
     'start'=>'2014-12-31 22:00:00',
     'end'=>'2015-01-01 03:30:00',
     'summary'=>'New Years Eve Dinner',
-    'description'=>'We will have a great party!!'
+    'description'=>'We will have a great party!!',
     'location'=>'Via Nazionale 6 Roma'
 );
 ```
