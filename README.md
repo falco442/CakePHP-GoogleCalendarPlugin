@@ -80,3 +80,22 @@ public $components = array(
     )
 );
 ```
+
+### Change Time Zone
+
+Note that events' start and date accepts only a `datetime` format, and post to Google Calendar a datetime in the format RFC3339, with a timezone set by default.
+
+The default timezone is `Europe/Rome`, but you can change it from the `AppController.php`:
+
+```php
+public $components = array(
+    ...,
+    'GoogleCalendar.GoogleCalendar'=>array(
+        'id'=>'your-Google-App-id',
+        'secret'=>'your-Google-App-secret',
+        'timeZone'=>'your-Time-Zone-code'
+    )
+);
+```
+
+You can find [here](http://php.net/manual/en/timezones.php) the list of supported timezones by PHP.
