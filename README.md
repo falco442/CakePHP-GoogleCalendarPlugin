@@ -66,8 +66,8 @@ If you don't want to map everytime the fields of the event (maybe because your e
 public $components = array(
     ...,
     'GoogleCalendar.GoogleCalendar'=>array(
-	   'id'=>'214253494718-bcb5cdc3ov8i34mfm5pb9fbmfej876bp.apps.googleusercontent.com',
-    	'secret'=>'l182SpNtvG9MnppvUDRdkxOP',
+	   'id'=>'your Google App id',
+    	'secret'=>'your Google App secret',
     	'eventMap'=>array(
     		'summary'=>'name',
     		'location'=>'address',
