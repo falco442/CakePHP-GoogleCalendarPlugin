@@ -10,6 +10,14 @@ This is a short CakePHP plugin for Google Calendar, still in development. For no
 
 Download the .zip file and extract it in your app/Plugin folder, renaming the master folder as "GoogleCalendar"
 
+## Clone with Git
+
+Go to `app/Plugin` folder and give the command
+
+```bash
+git clone https://github.com/falco442/CakePHP-GoogleCalendarPlugin.git GoogleCalendar
+```
+
 ## Load the component
 
 Load GoogleCalendar in your Components in the `AppController.php`:
