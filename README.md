@@ -18,6 +18,16 @@ Go to `app/Plugin` folder and give the command
 git clone https://github.com/falco442/CakePHP-GoogleCalendarPlugin.git GoogleCalendar
 ```
 
+## With Composer
+
+After installing CakePHP 2.x with Composer (follow [this instructions](https://book.cakephp.org/2.0/en/installation/advanced-installation.html)) you can install the plugin with the command
+
+```
+composer require falco442/cake-google-calendar
+```
+
+# Usage
+
 ## Load the component
 
 Load GoogleCalendar in your Components in the `AppController.php`:
@@ -26,15 +36,13 @@ Load GoogleCalendar in your Components in the `AppController.php`:
 public $components = array(
     ...,
     'GoogleCalendar.GoogleCalendar'=>array(
-	   'id'=>'your-Google-App-id',
-    	'secret'=>'your-Google-App-secret'        
+       'id'=>'your-Google-App-id',
+        'secret'=>'your-Google-App-secret'        
     )
 );
 ```
 
 and this will load the component located in the plugin.
-
-## Usage
 
 ### Create an event
 
@@ -63,7 +71,7 @@ The function returns the `id` of the event returned by Google.
 To get a user's calendar list, simply use the function `getCalendarList()`, that accepts a unique parameter: the Google Account ID of the user of which we want to retrieve the calendar list:
 
 ```php
-getCalendarList($googleAccountID);
+$this->GoogleCalendar->getCalendarList($googleAccountID);
 
 ```
 
@@ -79,15 +87,15 @@ If you don't want to map everytime the fields of the event (maybe because your e
 public $components = array(
     ...,
     'GoogleCalendar.GoogleCalendar'=>array(
-	   'id'=>'your-Google-App-id',
-    	'secret'=>'your-Google-App-secret',
-    	'eventMap'=>array(
-    		'summary'=>'event_title',
-    		'description'=>'event_description'
-    		'location'=>'event_address',
-    		'start'=>'start_datetime',
-    		'end'=>'end_datetime'
-    	)
+       'id'=>'your-Google-App-id',
+        'secret'=>'your-Google-App-secret',
+        'eventMap'=>array(
+            'summary'=>'event_title',
+            'description'=>'event_description'
+            'location'=>'event_address',
+            'start'=>'start_datetime',
+            'end'=>'end_datetime'
+        )
     )
 );
 ```
