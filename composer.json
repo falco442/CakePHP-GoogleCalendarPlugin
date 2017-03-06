@@ -1,0 +1,13 @@
+{
+    "name": "falco442/cake-google-calendar",
+    "description": "Plugin Google Calendar for CakePHP 2.x",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "falco442",
+            "email": "marcofra83@gmail.com"
+        }
+    ],
+    "require": {}
+}
