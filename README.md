@@ -20,7 +20,7 @@ git clone https://github.com/falco442/CakePHP-GoogleCalendarPlugin.git GoogleCal
 
 ## With Composer
 
-After installing CakePHP 2.x with Composer (follow [this instructions](https://book.cakephp.org/2.0/en/installation/advanced-installation.html)) you can install the plugin with the command
+After installing CakePHP 2.x with Composer (follow [this instructions](https://book.cakephp.org/2.0/en/installation/advanced-installation.html#installing-cakephp-with-composer)) you can install the plugin with the command
 
 ```
 composer require falco442/cake-google-calendar
